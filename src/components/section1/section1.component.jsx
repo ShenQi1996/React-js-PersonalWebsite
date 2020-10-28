@@ -2,11 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Wrapper from '../wrapper/wrapper.component';
+import "./section1.component.css";
+
 
 const Section1Styled = styled.div`
-  background-color: darkviolet;
   .active {
     border-bottom: 1px solid white;
+  }
+  color: #f8f8f8;
+  font-family: 'Libre Baskerville', serif;
+ h1{
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 900;
+ }
+  p{
+    font-weight: 900;
+  }
+  a{
+    font-weight: 500;
   }
 `;
 
@@ -14,12 +27,12 @@ export default function Section1() {
   return (
     <Section1Styled id="section1">
       <Wrapper>
-        <h1>Section 1</h1>
+        <h1>Sam Qi</h1>
+        <a>Personal Trainer/ Font-End Programmer</a>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis adipisci eaque animi repellat
-          atque assumenda corporis quidem nostrum ea, nulla qui cupiditate suscipit, quisquam voluptas mollitia ex iusto
-          voluptates.
+        ‘If you want something you’ve never had, you must be willing to do something you’ve never done.’
         </p>
+        <a>— Thomas Jefferson</a>
       </Wrapper>
     </Section1Styled>
   );

@@ -11,11 +11,12 @@ const NavbarStyled = styled.div`
   width: 100%;
   .header {
     background: black;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     margin: 0;
     color: white;
+    font-family: 'Staatliches', cursive;
     * {
       cursor: pointer;
     }
@@ -27,6 +28,11 @@ const NavbarStyled = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .logo{
+    border-radius: 200px;
+    height: 35px;
+    width: 30px;
+  }
 `;
 
 export default function Navbar() {
@@ -34,20 +40,25 @@ export default function Navbar() {
     <NavbarStyled>
       <div className="header">
         <Link activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
-          Section 1
+          Home
         </Link>
         <Link activeClass="active" to="section2" spy={true} smooth={true} duration={1000}>
-          Section 2
+          About Me
         </Link>
+        <img src="https://images.cdn2.stockunlimited.net/clipart/side-view-of-a-silhouette-man_1358872.jpg" className="logo"/>
         <Link activeClass="active" to="section3" spy={true} smooth={true} duration={1000}>
-          Section 3
+        Program
+        </Link>
+        <Link activeClass="active" to="section4" spy={true} smooth={true} duration={1000}>
+          Contexts
         </Link>
       </div>
-      <div className="scrolling-buttons">
+      {/**      <div className="scrolling-buttons">
         <Wrapper>
-          <OnScreenScrolling />
+        <OnScreenScrolling />
         </Wrapper>
-      </div>
+      </div> */}
+
     </NavbarStyled>
   );
 }

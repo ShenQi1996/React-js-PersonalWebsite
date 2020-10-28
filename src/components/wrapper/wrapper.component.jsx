@@ -8,10 +8,11 @@ const WrapperStyled = styled.div`
   justify-content: center;
   align-items: center;
   h1 {
-    font-size: 45px;
+    font-size: 80px;
   }
   p {
     font-size: 22px;
+    
   }
 `;
 

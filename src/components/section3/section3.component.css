@@ -1,0 +1,19 @@
+#section3 {
+  background-image: url("./btnB.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.prof-box {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.leftBox {
+  color: white;
+  padding-right: 100px;
+}
+.rightBot {
+  padding-left: 100px;
+}

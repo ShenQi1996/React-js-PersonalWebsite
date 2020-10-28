@@ -1,0 +1,27 @@
+#section2 {
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./btnB.png");
+}
+.proImage {
+  height: 200px;
+}
+.bio {
+  font-family: "Libre Baskerville", serif;
+  padding-right: 120px;
+  padding-left: 120px;
+  font-weight: 600;
+  margin-top: 50px;
+
+  background-image: linear-gradient(
+    to left,
+    rgb(34, 30, 30),
+    #151542,
+    #61617c,
+    #dedee4
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
