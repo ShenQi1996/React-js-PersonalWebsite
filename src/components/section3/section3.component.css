@@ -12,8 +12,18 @@
 
 .leftBox {
   color: white;
-  padding-right: 100px;
+  margin-right: 100px;
+  background-color: #333331;
+  box-shadow: -10px 10px #888888;
+  border-radius: 10px;
+  padding: 20px;
+  border: solid #ffffff;
 }
 .rightBot {
-  padding-left: 100px;
+  margin-left: 100px;
+  box-shadow: 5px 10px #888888;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid #000000;
 }

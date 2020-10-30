@@ -9,6 +9,7 @@ const NavbarStyled = styled.div`
   font-size: 24px;
   position: fixed;
   width: 100%;
+  z-index: 999;
   .header {
     background: black;
     padding: 20px;
@@ -50,7 +51,7 @@ export default function Navbar() {
         Program
         </Link>
         <Link activeClass="active" to="section4" spy={true} smooth={true} duration={1000}>
-          Contexts
+          Contacts
         </Link>
       </div>
       {/**      <div className="scrolling-buttons">
