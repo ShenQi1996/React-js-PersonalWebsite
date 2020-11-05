@@ -1,29 +1,60 @@
-#section3 {
-  background-image: url("./btnB.png");
-  background-size: cover;
-  background-position: center center;
-}
-
 .prof-box {
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+  color: white;
+  background-color: transparent;
 }
 
 .leftBox {
-  color: white;
-  margin-right: 100px;
-  background-color: #333331;
-  box-shadow: -10px 10px #888888;
-  border-radius: 10px;
   padding: 20px;
-  border: solid #ffffff;
+  border-style: dashed;
+  width: 50%;
+  margin-right: 2%;
 }
 .rightBot {
-  margin-left: 100px;
-  box-shadow: 5px 10px #888888;
-  background-color: white;
   padding: 20px;
-  border-radius: 10px;
-  border: solid #000000;
+  border-style: dashed;
+  width: 50%;
+  margin-right: 2%;
+}
+
+.test1,
+.test2,
+.test3,
+.test4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  background-size: cover;
+  transition: 500ms;
+}
+
+.test1:hover,
+.test2:hover,
+.test3:hover,
+.test4:hover {
+  opacity: 0;
+  transition: 500ms;
+}
+
+.test1 {
+  background-image: url("../../Images/pj1.PNG");
+}
+.test2 {
+  background-image: url("../../Images/NETFLIX.PNG");
+}
+.test3 {
+  background-image: url("../../Images/TODO.PNG");
+}
+.test4 {
+  background-image: url("../../Images/WEB.PNG");
+}
+
+.MuiButton-root {
+  margin: 2% !important;
 }

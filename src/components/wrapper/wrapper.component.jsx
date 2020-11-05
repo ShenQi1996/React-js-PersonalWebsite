@@ -7,12 +7,16 @@ const WrapperStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-style: dashed;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Saira Stencil One", cursive;
   h1 {
-    font-size: 80px;
+    font-size: 90px;
   }
   p {
-    font-size: 22px;
-    
+    font-size: 20px;
   }
 `;
 

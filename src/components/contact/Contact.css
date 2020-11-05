@@ -6,8 +6,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 50%;
+  padding: 20px;
 }
 
 .form1 > h2 {
@@ -36,7 +36,6 @@ textarea:focus {
 
 .form1 > textarea {
   height: 150px;
-  max-width: 500px;
   min-height: 100px;
 }
 

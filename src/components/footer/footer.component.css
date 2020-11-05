@@ -1,7 +1,5 @@
 #footer1 {
-  background-image: url("./btnB.png");
-  background-size: cover;
-  background-position: center center;
+  background-color: #000000;
   min-height: 20vh;
   display: flex;
   flex-direction: column;

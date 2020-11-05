@@ -5,10 +5,11 @@ import "./footer.component.css";
 
 const FooterStyle = styled.div`
   color: #fffdfd;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Saira Stencil One", cursive;
   p{
-    font-weight: 900;
+    font-size: 20px;
   }
+  min-height: 50vh;
 `;
 
 export default function Footer1() {

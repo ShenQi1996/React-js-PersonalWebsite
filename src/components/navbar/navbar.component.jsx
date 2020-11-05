@@ -12,12 +12,12 @@ const NavbarStyled = styled.div`
   z-index: 999;
   .header {
     background: black;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     margin: 0;
     color: white;
-    font-family: 'Staatliches', cursive;
+    font-family: "Saira Stencil One", cursive;
     * {
       cursor: pointer;
     }
@@ -36,22 +36,28 @@ const NavbarStyled = styled.div`
   }
 `;
 
+
+
+
 export default function Navbar() {
+
   return (
     <NavbarStyled>
       <div className="header">
-        <Link activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
-          Home
-        </Link>
         <Link activeClass="active" to="section2" spy={true} smooth={true} duration={1000}>
-          About Me
+          ABOUT ME
         </Link>
-        <img src="https://images.cdn2.stockunlimited.net/clipart/side-view-of-a-silhouette-man_1358872.jpg" className="logo"/>
         <Link activeClass="active" to="section3" spy={true} smooth={true} duration={1000}>
-        Program
+         PROJECTS
+        </Link>
+        <Link activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
+          <img src="https://images.cdn2.stockunlimited.net/clipart/side-view-of-a-silhouette-man_1358872.jpg" className="logo"/>  
         </Link>
         <Link activeClass="active" to="section4" spy={true} smooth={true} duration={1000}>
-          Contacts
+          EXPERIENCES
+        </Link>
+        <Link activeClass="active" to="section5" spy={true} smooth={true} duration={1000}>
+          CONTACTS
         </Link>
       </div>
       {/**      <div className="scrolling-buttons">

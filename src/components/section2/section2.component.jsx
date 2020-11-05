@@ -2,39 +2,43 @@ import React from 'react';
 import styled from 'styled-components';
 import "./section2.component.css"
 import Wrapper from '../wrapper/wrapper.component';
-import profile from "./profile.svg";
+import profile2 from "./profile2.png";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Section2Styled = styled.div`
   /** font-family: 'Bebas Neue', cursive; */
-  
 `;
 
 export default function Section2() {
   return (
     <Section2Styled id="section2">
       <Wrapper>
-        <h1 >About Me</h1>
-            <img className="proImage" src={profile}/>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <p className="bio">
-                My attached resume outlines all that I could offer your organization. Here's the overview:
-  My educational background has prepared me for the role of becoming a member of organization.  In particular, my study of Computer Science has given me a solid background so that I can perform basic programming. I am eager to contribute my enthusiasm and up-to-date skills to your organization.
-  I am certain that my resume will give you a greater understanding of my qualifications for this exciting opportunity.
-  I would greatly appreciate the opportunity to work with and learn from you. I look forward to speaking with you soon.
-                  </p>
-                </div>
-                <div class="flip-card-back">
-                <p className="bio">
-                My attached resume outlines all that I could offer your organization. Here's the overview:
-  My educational background has prepared me for the role of becoming a member of organization.  In particular, my study of Computer Science has given me a solid background so that I can perform basic programming. I am eager to contribute my enthusiasm and up-to-date skills to your organization.
-  I am certain that my resume will give you a greater understanding of my qualifications for this exciting opportunity.
-  I would greatly appreciate the opportunity to work with and learn from you. I look forward to speaking with you soon.
-                  </p>
-                </div>
+        <div  data-aos="zoom-in" className="card">
+            <div  className="Box1">
+              <div className="bio">
+                <h1 >ABOUT ME</h1>
+                <p>
+                  <a className="small">  
+                    A PROVEN LEADER WITH NUMBER OF YEARS OF EXPERIENCE WHO IS DRIVEN TO MAKE THE WORLD A BETTER PLACE ONE SOLUTION AT A TIME.
+                   <br/>
+                  </a>
+                  <a className="small">  
+                    CREATE  A PERSONAL BRAND THAT PEOPLE REMEMBER ME, BUILD THINGS THAT REPRESENT ME, AND APPRECIATE PEOPLE THAT HELPED ME.  
+                    <br/>
+                  </a>
+                  <a className="big">  
+                   DEVELOPING, STREAMLINING, AND DELIVERING SOFTWARE AND WEBSITES USED BY MANY BUSINESSS.
+                   <br/>
+                  </a>
+                </p>
               </div>
+              <img   className="proImage" src={profile2}/>
             </div>
+        </div>
       </Wrapper>
     </Section2Styled>
   );

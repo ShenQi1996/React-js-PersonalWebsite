@@ -3,6 +3,11 @@ import "./Contact.css";
 
 import { db } from "../../firebase";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,8 +35,14 @@ function Contact() {
   };
 
   return (
-    <form className="form1" onSubmit={handleSumbit}>
-      <h2>Contact Me</h2>
+    <form
+      data-aos="zoom-out-down"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      className="form1"
+      onSubmit={handleSumbit}
+    >
+      <h2>CONTTACT ME</h2>
 
       <label>Name</label>
       <input
@@ -57,7 +68,7 @@ function Contact() {
       <button
         type="submit"
         disabled={!name | (!email & !message)}
-        style={{ background: loader ? "#ccc" : "#33475a" }}
+        style={{ background: loader ? "transparent" : "#414139" }}
       >
         Submit
       </button>

@@ -1,6 +1,11 @@
 body::-webkit-scrollbar {
   display: none;
+  background-image: url("https://www.visionpt.com.au/images/studio_blog/28/62208.jpg");
 }
 .App {
   text-align: center;
+  background-image: url("./Images/1TEST.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

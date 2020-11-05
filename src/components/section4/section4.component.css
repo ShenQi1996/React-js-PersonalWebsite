@@ -1,33 +1,51 @@
-#section4 {
-  background-image: url("./btnB.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-
-.twoBox {
+.Box {
   display: flex;
   width: 80%;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 0;
 }
+.timeline {
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+.MuiPaper-root {
+  background-color: #ffffff54 !important;
+  color: #ffffff !important;
+}
+.MuiTypography-body2 {
+  color: #ffffff !important;
+}
+.listText {
+  font-size: medium;
+}
+.listText2 {
+  font-size: medium;
+  text-align: left;
+}
+
+/* calendar */
 .cal {
-  width: 40%;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: -10px 10px #888888;
-  border: solid #000000;
+  display: none;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgb(37, 1, 1);
+  color: rgb(0, 0, 0);
+  width: 950px;
 }
 .cal h2 {
   font-size: 40px;
-  color: #333331;
+  color: #ffffff;
+}
+.cal a {
+  color: black;
 }
 
-.context1 {
-  border-radius: 10px;
-  background-color: #333331;
-  width: 40%;
-  box-shadow: 10px 10px #888888;
-  border: solid #ffffff;
+#calendar {
+  background-color: transparent;
 }
+/* calendar */
